@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headlinepage3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.text {
+    margin-right: 100px;
+}
+
+.small-svgs {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50, -50%);
+    pointer-events: none;
+}
+.btn, .btn2, .btn3{
+    margin-bottom: 200px;
+}
+
+.btn{
+    border: 1px solid#3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position:  relative;
+    overflow: hidden;
+}
+.btn1, .btn2{
+    color: #3498db;
+}
+.btn3 {
+    color: #fff;
+}
+
+.btn1:hover,.btn2:hover{
+    color: #fff;
+}
+.btn3:hover {
+    color: #3498db;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width:  100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before,.btn3::before{
+    top: 0%;
+    border-radius: 0 0 50% 50%;
+}
+.btn3::before{
+    height: 180%;
+
+}
+.btn1:hover:before,.btn2:hover:before{
+    height: 180%;
+}
+.btn3:hover:before{
+    height: 0%;
+}
